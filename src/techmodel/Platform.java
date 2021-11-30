@@ -1,18 +1,18 @@
-package model;
+package techmodel;
 
 public class Platform {
     String name;
     int price;
-    int numOfGamesPlayed;
+    int numOfGamesOnPlatform;
 
     public Platform(String name, int price) {
         this.name = name;
         this.price = price;
-        this.numOfGamesPlayed =0;
+        this.numOfGamesOnPlatform =0;
     }
 
-    public void playNewGameInThisPlatform(){
-        this.numOfGamesPlayed++;
+    public void incNumGamesOnPlatform(){
+        this.numOfGamesOnPlatform++;
     }
 
     public String getName(){
@@ -20,6 +20,6 @@ public class Platform {
     }
 
     public String getStat(){
-        return "You have played " + this.numOfGamesPlayed + " game(s) with " + this.name;
+        return "You have " + this.numOfGamesOnPlatform + " game(s) on " + this.name;
     }
 }
