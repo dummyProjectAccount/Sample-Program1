@@ -56,12 +56,7 @@ public class Person {
     }
 
     public double getTotalPlayTime(boolean inHours) {
-        if (inHours) {
-            return this.totalPlaytime / 60.0;
-        }
-        else {
-            return this.totalPlaytime;
-        }
+        return this.totalPlaytime / 60.0;
     }
 
 }
